@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Membership">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/overall_title_field"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/curve_upper_background"
+            >
+
+            <TextView
+                android:id="@+id/tv_membership_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How Do I Earn Points?"
+                android:layout_marginTop="40dp"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/tv_membership_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="For every purchase on the drinks, you'll earn points according to your membership tier."
+                android:textColor="#FFFFFF"
+                android:layout_below="@id/tv_membership_title"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:padding="15dp"
+            android:background="@drawable/border_background"
+            android:layout_margin="10dp"
+            android:layout_below="@id/overall_title_field"
+            >
+
+            <TextView
+                android:id="@+id/tv_member_benefits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member Benefits"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_member_benefits"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_mb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loyalty Journey"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick"
+                android:layout_below="@id/tv_member_benefits"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Obtain points while purchase and receive latest promotions/news updates."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick"
+                android:layout_below="@id/tv_mb1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:padding="15dp"
+            android:background="@drawable/border_background"
+            android:layout_margin="10dp"
+            android:layout_below="@id/relative_layout1"
+            >
+
+            <TextView
+                android:id="@+id/tv_silver_benefits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Silver Benefits"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_silver_benefits"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10% off on Juice Menu"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick2"
+                android:layout_below="@id/tv_silver_benefits"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sb_explain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10% cash discount. The 10% discount is applicable to Juice only."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick2"
+                android:layout_below="@id/tv_sb1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_sb_explain1"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_sb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reward Voucher"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick2"
+                android:layout_below="@id/tv_sb_explain1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Can exchange rewards with their accumulated points."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick3"
+                android:layout_below="@id/tv_sb2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout3"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="15dp"
+            android:background="@drawable/border_background"
+            android:layout_margin="10dp"
+            android:layout_below="@id/relative_layout2"
+            >
+
+            <TextView
+                android:id="@+id/tv_gold_benefits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gold Benefits"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_gold_benefits"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerated Earn Rate"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick4"
+                android:layout_below="@id/tv_gold_benefits"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gb_explain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earn 1.5x rewards points as a Gold user."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick4"
+                android:layout_below="@id/tv_gb1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_gb_explain1"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50% off Birthday Drink"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick5"
+                android:layout_below="@id/tv_gb_explain1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gb_explain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enjoy 50% discount of any drink on your birthday."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick5"
+                android:layout_below="@id/tv_gb2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_gb_explain2"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quarterly Rewards Deals"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick6"
+                android:layout_below="@id/tv_gb_explain2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_gb_explain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get access to exclusive deals such as combo drinks, limited time deals and more."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick6"
+                android:layout_below="@id/tv_gb3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout4"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:padding="15dp"
+            android:background="@drawable/border_background"
+            android:layout_margin="10dp"
+            android:layout_below="@id/relative_layout3"
+            >
+
+            <TextView
+                android:id="@+id/tv_platinum_benefits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Platinum Benefits"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_platinum_benefits"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accelerated Earn Rate"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick7"
+                android:layout_below="@id/tv_platinum_benefits"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb_explain1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Earn 2x rewards points as a Platinum user."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick7"
+                android:layout_below="@id/tv_pb1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_pb_explain1"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BUY 1 FREE 1 on Birthday"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick8"
+                android:layout_below="@id/tv_pb_explain1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb_explain2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Member is entitled to one Buy 1 Free 1 deal on their birthday."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick8"
+                android:layout_below="@id/tv_pb2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick9"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_pb_explain2"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Rewards Deals"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick9"
+                android:layout_below="@id/tv_pb_explain2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb_explain3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Get access to exclusive deals such as combo drinks, limited time deals and more."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick9"
+                android:layout_below="@id/tv_pb3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/icon_tick10"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_check_circle"
+                android:layout_below="@id/tv_pb_explain3"
+                android:layout_marginTop="5dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exclusive Voucher or Codes"
+                android:textSize="15sp"
+                android:layout_toRightOf="@id/icon_tick10"
+                android:layout_below="@id/tv_pb_explain3"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_pb_explain4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receive season limited codes upon discounts on drinks."
+                android:textSize="12sp"
+                android:layout_toRightOf="@id/icon_tick10"
+                android:layout_below="@id/tv_pb4"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
