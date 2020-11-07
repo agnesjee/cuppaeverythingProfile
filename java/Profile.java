@@ -67,7 +67,7 @@ public class Profile extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 //When the user click yes button, the screen will return to login activity (change to login)
-                Toast.makeText(MainActivity.this, "Log Out Successful", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Profile.this, "Log Out Successful", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(Profile.this, MainActivity.class);
                 startActivity(intent);
             }
